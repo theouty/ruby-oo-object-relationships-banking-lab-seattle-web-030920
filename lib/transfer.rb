@@ -30,7 +30,9 @@ class Transfer
  
  def execute_transaction 
    if valid? == true && sender.balance > amount
-     sender.deposit(amount)
+     sender.balance = balance - amount 
+     receiver.balance = balance + amount
+     status = 
      
     
 end
