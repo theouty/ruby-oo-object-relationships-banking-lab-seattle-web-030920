@@ -32,7 +32,9 @@ class Transfer
    if valid? == true && sender.balance > amount
      sender.balance = balance - amount 
      receiver.balance = balance + amount
-     status = 
+     status = "complete"
+   end 
+ end 
      
     
 end
