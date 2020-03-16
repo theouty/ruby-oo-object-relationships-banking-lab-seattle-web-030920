@@ -22,7 +22,7 @@ class Transfer
       @sender.deposit(-amount)
       @receiver.deposit(amount)
       @status = 'complete'
-    elsif !valid?
+    elsif !valid? @@ send.balance< amount
       @status = 'rejected'
       "Transaction rejected. Please check your account balance."
     end
