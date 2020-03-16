@@ -29,7 +29,8 @@ class Transfer
  # end
  
  def execute_transaction 
-   if valid? == true && sender.balance > 0 
+   if valid? == true && sender.balance > amount
+     
      
     
 end
